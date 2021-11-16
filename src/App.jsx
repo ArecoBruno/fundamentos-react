@@ -17,6 +17,11 @@ export default () =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo="#9 - Comunicação Direta" color="#982395">
+                <ParOuImpar numero={20}></ParOuImpar>
+                <UsuarioInfo usuario={{nome: 'Fernando'}} />
+                <UsuarioInfo usuario={{email: 'fer@nando.com'}} />
+            </Card>
             <Card titulo="#8 - Renderização Condicional" color="#982395">
                 <ParOuImpar numero={20}></ParOuImpar>
                 <UsuarioInfo usuario={{nome: 'Fernando'}} />

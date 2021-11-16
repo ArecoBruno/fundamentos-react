@@ -11,7 +11,7 @@ export default props => {
         return ifChildren
     } else if (elseChild) {
         return elseChild
-    }  else {
+    } else {
         return false
     }
 }
