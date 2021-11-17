@@ -12,15 +12,18 @@ import ListaAlunos from './Components/repeticao/ListaAlunos';
 import TabelaProdutos from './Components/repeticao/TabelaProdutos';
 import ParOuImpar from './Components/condicional/ParOuImpar';
 import UsuarioInfo from './Components/condicional/UsuarioInfo';
+import DiretaPai from './Components/comunicacao/DiretaPai';
+import IndiretaPai from './Components/comunicacao/IndiretaPai';
 
 export default () =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
-            <Card titulo="#9 - Comunicação Direta" color="#982395">
-                <ParOuImpar numero={20}></ParOuImpar>
-                <UsuarioInfo usuario={{nome: 'Fernando'}} />
-                <UsuarioInfo usuario={{email: 'fer@nando.com'}} />
+            <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
+                <IndiretaPai></IndiretaPai>
+            </Card>
+            <Card titulo="#9 - Comunicação Direta" color="#59323C">
+                <DiretaPai></DiretaPai>
             </Card>
             <Card titulo="#8 - Renderização Condicional" color="#982395">
                 <ParOuImpar numero={20}></ParOuImpar>

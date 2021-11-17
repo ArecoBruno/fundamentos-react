@@ -4,7 +4,8 @@ import DiretaFilho from "./DiretaFilho";
 export default props => {
     return (
         <div>
-            <DiretaFilho text="Filho 1" numero={20} bool={true}></DiretaFilho>
+            <DiretaFilho nome="Junior" idade={20} nerd={true}></DiretaFilho>
+            <DiretaFilho nome="Gabriel" idade={17} nerd={false}></DiretaFilho>
         </div>
     )
 }
