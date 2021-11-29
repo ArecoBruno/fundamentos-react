@@ -1,0 +1,11 @@
+.Input input {
+    padding-left: 10px;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    border: 0.5px solid #ccc;
+    margin: 5px 0;
+}
+
+.Input input:hover {
+    border: 0.5px solid black;
+}

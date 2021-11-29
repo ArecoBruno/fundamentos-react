@@ -14,11 +14,19 @@ import ParOuImpar from './Components/condicional/ParOuImpar';
 import UsuarioInfo from './Components/condicional/UsuarioInfo';
 import DiretaPai from './Components/comunicacao/DiretaPai';
 import IndiretaPai from './Components/comunicacao/IndiretaPai';
+import Input from './Components/formulário/Input';
+import Contador from './Components/contador/Contador';
 
 export default () =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo="#12 - Contador" color="#424242">
+                <Contador numeroInicial={10}></Contador>
+            </Card>
+            <Card titulo="#11 - Componente Controlado" color="#E45F56">
+                <Input></Input>
+            </Card>
             <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
                 <IndiretaPai></IndiretaPai>
             </Card>
@@ -27,8 +35,8 @@ export default () =>
             </Card>
             <Card titulo="#8 - Renderização Condicional" color="#982395">
                 <ParOuImpar numero={20}></ParOuImpar>
-                <UsuarioInfo usuario={{nome: 'Fernando'}} />
-                <UsuarioInfo usuario={{email: 'fer@nando.com'}} />
+                <UsuarioInfo usuario={{ nome: 'Fernando' }} />
+                <UsuarioInfo usuario={{ email: 'fer@nando.com' }} />
             </Card>
             <Card titulo="#7 - Repetição Produtos" color="#20B2AA">
                 <TabelaProdutos></TabelaProdutos>
